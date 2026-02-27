@@ -38,4 +38,4 @@ SugCar is provided "as is" and "as available" without warranties of any kind, ex
 We may update these Terms. Continued use of SugCar after updates means you accept the revised Terms.
 
 ## 10. Contact
-Contact for legal questions: `legal@sugcar.app` (replace with your real contact address before publication).
+Contact for legal questions: `sugcar@protonmail.com` (replace with your real contact address before publication).

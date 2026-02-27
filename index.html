@@ -3,60 +3,54 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>SugCar Privacy Policy</title>
+  <title>SugCar Legal</title>
   <style>
     :root { color-scheme: light dark; }
     body { max-width: 860px; margin: 40px auto; padding: 0 20px; font: 16px/1.6 -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif; }
     h1, h2 { line-height: 1.25; }
     code { background: rgba(127,127,127,.14); padding: 1px 4px; border-radius: 4px; }
     .muted { opacity: .75; }
+    .card { padding: 14px 16px; border: 1px solid rgba(127,127,127,.25); border-radius: 10px; }
+    nav a { margin-right: 14px; }
   </style>
 </head>
 <body>
-  <h1>SugCar Privacy Policy</h1>
+  <h1>SugCar Legal</h1>
   <p class="muted">Effective date: 2026-02-27</p>
 
-  <h2>1. Overview</h2>
-  <p>SugCar is a secondary glucose data visualization app. It is designed for informational, glanceable awareness and is not a medical device.</p>
+  <nav>
+    <a href="#privacy">Privacy Policy</a>
+    <a href="#terms">Terms of Service</a>
+    <a href="./TERMS_OF_SERVICE.md">Full Terms (Markdown)</a>
+  </nav>
 
-  <h2>2. Data We Process</h2>
-  <p>SugCar processes account authentication details and glucose-related readings required to display your dashboard (for example: value, trend arrow, range status, and last updated time).</p>
+  <h2 id="privacy">Privacy Policy</h2>
+  <p>SugCar is a secondary glucose data visualization app designed for informational, glanceable awareness and is not a medical device.</p>
 
-  <h2>3. How SugCar Uses Data (Pass-Through Model)</h2>
+  <h3>Data Processing Model</h3>
   <p>SugCar acts primarily as a pass-through visualization layer for data retrieved from LibreLinkUp-compatible services.</p>
   <ul>
-    <li>Credentials are used to authenticate requests.</li>
+    <li>Credentials are used only to authenticate requests.</li>
     <li>Credentials are not stored permanently on external SugCar servers.</li>
-    <li>Backend session/auth data is kept in volatile memory only for active operation and is cleared on logout/session end.</li>
+    <li>Operational session/auth data is kept in volatile memory for active operation and cleared on logout/session end.</li>
   </ul>
 
-  <h2>4. Data Sharing and Selling</h2>
-  <p>SugCar does not sell health data. SugCar does not share health data with advertising networks or data brokers.</p>
+  <h3>No Sale / No Ad Sharing</h3>
+  <p>SugCar does not sell health data and does not share health data with advertisers or data brokers.</p>
 
-  <h2>5. Third-Party Services</h2>
-  <p>SugCar connects to third-party glucose data services (for example, LibreLinkUp APIs) strictly to retrieve data requested by the user.</p>
-  <p>Use of third-party platforms is also governed by those providers’ own terms and privacy policies.</p>
+  <h3>Children’s Privacy</h3>
+  <p>SugCar is not directed to children under 13. We do not knowingly collect personal information from children under 13 without verified parental consent.</p>
 
-  <h2>6. Security</h2>
-  <ul>
-    <li>Data transmission is intended to occur over secure transport (HTTPS) in production deployments.</li>
-    <li>Sensitive app-side values are stored using platform security features (for example, iOS Keychain where applicable).</li>
-    <li>SugCar is built to minimize retention of sensitive credentials and health data.</li>
-  </ul>
+  <h3>Contact</h3>
+  <p>Privacy contact: <code>sugcar@protonmail.com</code></p>
 
-  <h2>7. Children’s Privacy</h2>
-  <p>SugCar is not directed to children under 13. We do not knowingly collect personal information from children under 13 without verified parental consent. If you believe a child has provided personal information without appropriate consent, contact us and we will take reasonable steps to delete such data.</p>
+  <h2 id="terms">Terms of Service (Summary)</h2>
+  <div class="card">
+    <p><strong>Not a Medical Device:</strong> SugCar is not a medical device and is not FDA-cleared or CE-marked for diagnosis or treatment.</p>
+    <p><strong>User Responsibility:</strong> Users must verify glucose values with a primary blood glucose meter (BGM) and consult a healthcare professional before clinical decisions.</p>
+    <p><strong>Limitation of Liability / Hold Harmless:</strong> To the fullest extent permitted by law, SugCar and its developer are not liable for medical emergencies, accidents, driving incidents, or treatment decisions related to use of the app. Users agree to hold harmless and indemnify the developer from related claims.</p>
+  </div>
 
-  <h2>8. Data Retention</h2>
-  <p>SugCar retains only the minimum data needed for current operation. Operational caches may be temporary and may be deleted on logout, app reset, or service restart.</p>
-
-  <h2>9. International Use</h2>
-  <p>If you use SugCar from outside your home jurisdiction, your data may be processed where your selected service infrastructure is hosted.</p>
-
-  <h2>10. Changes to This Policy</h2>
-  <p>We may update this Privacy Policy. Material changes will be reflected by updating the effective date.</p>
-
-  <h2>11. Contact</h2>
-  <p>For privacy questions, contact: <code>privacy@sugcar.app</code> (replace with your real contact address before publication).</p>
+  <p>Read full terms: <a href="./TERMS_OF_SERVICE.md">TERMS_OF_SERVICE.md</a></p>
 </body>
 </html>
