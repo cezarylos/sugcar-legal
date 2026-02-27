@@ -23,6 +23,8 @@ SugCar may display educational safety awareness text for drivers. This informati
 ## 5. Account and Access
 You are responsible for safeguarding your credentials and any connected third-party service account access.
 
+For active service operation, SugCar may store connected account credentials and session data in encrypted form on backend infrastructure. By using the service, you authorize this processing solely for data retrieval, session continuity, and app functionality.
+
 ## 6. Third-Party Services
 SugCar depends on third-party data providers and APIs. Availability, accuracy, or continuity of data is not guaranteed and may be interrupted or delayed.
 

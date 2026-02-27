@@ -28,11 +28,12 @@
   <p>SugCar is a secondary glucose data visualization app designed for informational, glanceable awareness and is not a medical device.</p>
 
   <h3>Data Processing Model</h3>
-  <p>SugCar acts primarily as a pass-through visualization layer for data retrieved from LibreLinkUp-compatible services.</p>
+  <p>SugCar acts as a secondary visualization layer for data retrieved from LibreLinkUp-compatible services.</p>
   <ul>
-    <li>Credentials are used only to authenticate requests.</li>
-    <li>Credentials are not stored permanently on external SugCar servers.</li>
-    <li>Operational session/auth data is kept in volatile memory for active operation and cleared on logout/session end.</li>
+    <li>Credentials are used only to authenticate requests to retrieve glucose data.</li>
+    <li>For active service operation, credentials and session tokens may be stored on SugCar backend systems in encrypted form at rest.</li>
+    <li>SugCar uses encrypted storage controls and access restrictions to limit exposure of sensitive account data.</li>
+    <li>Users can disconnect/logout, which invalidates the active SugCar app session.</li>
   </ul>
 
   <h3>No Sale / No Ad Sharing</h3>
