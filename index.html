@@ -16,7 +16,7 @@
 </head>
 <body>
   <h1>SugCar Legal</h1>
-  <p class="muted">Effective date: 2026-02-27</p>
+  <p class="muted">Effective date: 2026-03-03</p>
 
   <nav>
     <a href="#privacy">Privacy Policy</a>
@@ -28,18 +28,42 @@
   <p>SugCar is a secondary glucose data visualization app designed for informational, glanceable awareness and is not a medical device.</p>
 
   <h3>Data Processing Model</h3>
-  <p>SugCar acts as a secondary visualization layer for data retrieved from LibreLinkUp-compatible services.</p>
+  <p>SugCar connects directly to your personal Nightscout server to retrieve glucose data. All communication occurs between your device and your Nightscout instance.</p>
   <ul>
-    <li>Credentials are used only to authenticate requests to retrieve glucose data.</li>
-    <li>For active service operation, credentials and session tokens may be stored on SugCar backend systems in encrypted form at rest.</li>
-    <li>SugCar uses encrypted storage controls and access restrictions to limit exposure of sensitive account data.</li>
-    <li>Users can disconnect/logout, which invalidates the active SugCar app session.</li>
+    <li><strong>Credentials:</strong> Your Nightscout URL and API secret are stored locally on your device in the iOS Keychain (encrypted, accessible after first device unlock) and in a shared App Group container so background features can function.</li>
+    <li><strong>No backend servers:</strong> SugCar does not operate any backend infrastructure. Your credentials and glucose data are never transmitted to SugCar servers.</li>
+    <li><strong>On-device storage only:</strong> Glucose readings, thresholds, display units, and user preferences (voice settings, theme) are stored locally using iOS UserDefaults and Keychain.</li>
+    <li>Users can disconnect/logout at any time, which deletes all stored credentials from both Keychain and shared storage.</li>
+  </ul>
+
+  <h3>Voice &amp; Speech Features</h3>
+  <ul>
+    <li>SugCar includes an optional text-to-speech feature that reads glucose values aloud using Apple's on-device <code>AVSpeechSynthesizer</code>.</li>
+    <li>All speech synthesis happens entirely on-device. No audio or text is transmitted externally.</li>
+    <li>Users can enable or disable voice, choose a voice, adjust speech rate, and configure what information is spoken (value, trend, time, unit).</li>
+  </ul>
+
+  <h3>Siri &amp; Shortcuts Integration</h3>
+  <ul>
+    <li>SugCar registers an App Shortcut ("Check My Blood Sugar") via the App Intents framework.</li>
+    <li>When triggered via Siri or the Shortcuts app, the intent fetches the latest reading directly from your Nightscout server in the background and returns a spoken response via Siri.</li>
+    <li>No data is shared with Apple beyond what Siri processes to deliver the spoken dialog.</li>
+  </ul>
+
+  <h3>Live Activities &amp; Dynamic Island</h3>
+  <ul>
+    <li>SugCar uses iOS Live Activities to display glucose readings on the Lock Screen and Dynamic Island.</li>
+    <li>Live Activity data is kept on-device and updated from your Nightscout server.</li>
+    <li>Tapping a Live Activity opens the app and triggers a data refresh.</li>
   </ul>
 
   <h3>No Sale / No Ad Sharing</h3>
   <p>SugCar does not sell health data and does not share health data with advertisers or data brokers.</p>
 
-  <h3>Children’s Privacy</h3>
+  <h3>No Analytics or Tracking</h3>
+  <p>SugCar does not include any analytics SDKs, crash reporting services, or third-party tracking.</p>
+
+  <h3>Children's Privacy</h3>
   <p>SugCar is not directed to children under 13. We do not knowingly collect personal information from children under 13 without verified parental consent.</p>
 
   <h3>Contact</h3>
@@ -49,6 +73,7 @@
   <div class="card">
     <p><strong>Not a Medical Device:</strong> SugCar is not a medical device and is not FDA-cleared or CE-marked for diagnosis or treatment.</p>
     <p><strong>User Responsibility:</strong> Users must verify glucose values with a primary blood glucose meter (BGM) and consult a healthcare professional before clinical decisions.</p>
+    <p><strong>Voice &amp; Siri Features:</strong> Spoken glucose readings are for convenience only and do not replace visual verification with a BGM.</p>
     <p><strong>Limitation of Liability / Hold Harmless:</strong> To the fullest extent permitted by law, SugCar and its developer are not liable for medical emergencies, accidents, driving incidents, or treatment decisions related to use of the app. Users agree to hold harmless and indemnify the developer from related claims.</p>
   </div>
 
