@@ -4,8 +4,8 @@ This repository hosts legal/compliance documents for SugCar.
 
 ## Files
 - `index.html` - Privacy Policy (publish this as GitHub Pages home page)
-- `TERMS_OF_SERVICE.md` - Terms of Service
-- `APP_STORE_REVIEW_NOTES.txt` - App Store reviewer notes draft
+- `TERMS_OF_SERVICE.md` - Terms of 
+
 
 ## Publish on GitHub Pages
 
